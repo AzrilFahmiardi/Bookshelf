@@ -186,6 +186,40 @@ main .child-content .book {
   font-family: "Quicksand";
   font-weight: 900;
   margin-top: 25px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .child-content .book .status-button {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+main .child-content .book .status-button button {
+  height: 2rem;
+  width: fit-content;
+  padding: 0px 10px;
+  font-family: "Inter";
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+}
+main .child-content .book .status-button .finished {
+  color: #337357;
+  border: 1px solid #337357;
+}
+main .child-content .book .status-button .finished:hover {
+  color: #eee;
+  background-color: #337357;
+}
+main .child-content .book .status-button .delete {
+  color: #ee4266;
+  border: 1px solid #ee4266;
+}
+main .child-content .book .status-button .delete:hover {
+  color: #eee;
+  background-color: #ee4266;
 }
 main .child-content .book h3 {
   margin: 0;
