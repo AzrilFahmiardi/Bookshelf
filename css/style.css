@@ -280,4 +280,10 @@ main .child-content .book p {
     width: 100px;
     border: 1px solid #eee;
   }
+  main .child-content .book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
 }
