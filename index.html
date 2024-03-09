@@ -4,24 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookshelf</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <h1>Bookshelf <span id="byAzril">by Azril</span></h1>
+      <h1>Bookshelf <span id="web-developer">by Azril</span></h1>
     </header>
     <main>
       <div class="content">
         <div class="child-content" id="add-book">
           <h2 class="title">ADD BOOK</h2>
+          <hr />
           <form action="" id="add-book-form">
             <label for="judul">Judul</label><br />
             <input type="text" id="judul" class="add-book-input" /><br />
-            <label for="penulis">penulis</label><br />
+            <label for="penulis">Penulis</label><br />
             <input type="text" id="Penulis" class="add-book-input" /><br />
             <label for="tahun">Tahun</label><br />
             <input type="text" id="tahun" class="add-book-input" /><br />
-            <label for="selesai-dibaca">Selesai dibaca</label>
-            <input type="checkbox" id="selesai-dibaca" /><br />
+            <label class="selesai-dibaca" for="check-box">Selesai dibaca</label>
+            <input type="checkbox" id="check-box" /><br />
             <input type="submit" value="Masukkan buku ke dalam rak" id="submit-button" />
           </form>
         </div>

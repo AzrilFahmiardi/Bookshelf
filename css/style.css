@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222831;
+  font-family: Inter, sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  color: #eee;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-top: 40px;
+}
+
+#web-developer {
+  font-size: 1rem;
+  font-weight: 100;
+  opacity: 0.8;
+}
+
+main .content {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 80px;
+}
+
+main .child-content {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 40px;
+  width: fit-content;
+}
+
+main .content #add-book {
+  background-color: #76abae;
+  padding: 10px;
+  width: 500px;
+  height: 600px;
+}
+
+main .content #book-shelf {
+  background-image: url(../assets/findBook_BG.jpeg);
+  width: 1000px;
+  min-height: 600px;
+}
+
+main .child-content .title {
+  margin: 0;
+  margin-top: 20px;
+  color: #eeeeee;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+main #add-book hr {
+  margin-top: 0;
+  width: 230px;
+  border: 1px solid #eee;
+}
+
+main .child-content #add-book-form {
+  margin-top: 50px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px 30px;
+}
+
+main #add-book label {
+  font-family: Raleway, sans-serif;
+  font-weight: 900;
+  color: #222831;
+  font-size: 1rem;
+}
+
+main #add-book .add-book-input {
+  margin-top: 5px;
+  margin-bottom: 40px;
+  height: 2rem;
+  border-radius: 8px;
+  border: 0;
+  padding: 20px 20px;
+  width: 100%;
+
+  font-family: Raleway, sans-serif;
+  font-size: 1rem;
+
+  background-color: #d9d9d9;
+}
+
+main #add-book .selesai-dibaca {
+  margin-left: 65%;
+}
+
+main #add-book-form input[type="checkbox"] {
+  background-color: #222831;
+  border-radius: 5px;
+}
+
+main #add-book #submit-button {
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+
+  width: 100%;
+  height: 3rem;
+  border-radius: 30px;
+  border: 0;
+  color: #eeeeee;
+  background-color: #31363f;
+
+  font-size: 1rem;
+  font-family: "Raleway";
+  font-weight: 600;
+}
