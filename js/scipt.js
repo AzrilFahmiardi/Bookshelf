@@ -169,6 +169,28 @@ document.addEventListener("DOMContentLoaded", function () {
     return -1;
   }
 
+  const searchForm = document.getElementById("search-book-form");
+  const searchArea = document.getElementById("search-area");
+  const bookContainers = document.querySelectorAll(".book-container");
+
+  searchForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const searchWord = searchArea.value.toLowerCase();
+
+    bookContainers.forEach(function (container) {
+      const books = container.querySelectorAll(".book");
+
+      books.forEach(function (book) {
+        const title = book.querySelector("h3").textContent.toLowerCase();
+        if (title.includes(searchWord)) {
+          book.style.display = "flex";
+        } else {
+          book.style.display = "none";
+        }
+      });
+    });
+  });
+
   if (isStorageExist) {
     loadData();
   }
