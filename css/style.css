@@ -208,6 +208,7 @@ main .child-content .book .status-button {
   display: flex;
   align-items: flex-end;
   gap: 10px;
+  flex-wrap: wrap;
 }
 main .child-content .book .status-button button {
   height: 2rem;
@@ -256,13 +257,13 @@ main .child-content .book p {
 
   main .content #add-book {
     margin-left: 0;
-    width: 70%;
+    width: 80%;
   }
 
   main .content #book-shelf {
     margin-right: 0;
-    width: 70%;
-    padding-left: 10px;
+    width: 80%;
+    padding-left: 4%;
   }
 
   main #add-book #submit-button {
