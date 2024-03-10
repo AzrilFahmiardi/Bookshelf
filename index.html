@@ -17,11 +17,11 @@
           <hr />
           <form action="" id="add-book-form">
             <label for="judul">Judul</label><br />
-            <input type="text" id="judul" class="add-book-input" /><br />
+            <input type="text" id="judul" class="add-book-input" required /><br />
             <label for="penulis">Penulis</label><br />
-            <input type="text" id="Penulis" class="add-book-input" /><br />
+            <input type="text" id="penulis" class="add-book-input" required /><br />
             <label for="tahun">Tahun</label><br />
-            <input type="text" id="tahun" class="add-book-input" /><br />
+            <input type="text" id="tahun" class="add-book-input" required /><br />
             <div class="book-check">
               <label class="selesai-dibaca" for="check-box">Selesai dibaca</label>
               <input type="checkbox" id="check-box" /><br />
@@ -36,47 +36,29 @@
               <input type="submit" value="search" id="search-button" />
             </form>
           </div>
-          <div id="being-read" class="book-container">
+          <div class="book-container">
             <h2 class="book-shelf-title">Being Read</h2>
-            <div class="book">
-              <div class="inner">
-                <h3>Harry Potter</h3>
-                <p>Penulis: J.K. Rowlinng</p>
-                <p>Tahun : 2000</p>
-              </div>
-              <div class="status-button">
-                <button class="finished">Finished</button>
-                <button class="delete">Delete</button>
-              </div>
-            </div>
-            <div class="book">
-              <div class="inner">
-                <h3>Harry Potter</h3>
-                <p>Penulis: J.K. Rowlinng</p>
-                <p>Tahun : 2000</p>
-              </div>
-              <div class="status-button">
-                <button class="finished">Finished</button>
-                <button class="delete">Delete</button>
-              </div>
+            <div class="book-list" id="being-read">
+              <!-- <div class="book">
+                <div class="inner">
+                  <h3>Harry Potter</h3>
+                  <p>Penulis: J.K. Rowlinng</p>
+                  <p>Tahun : 2000</p>
+                </div>
+                <div class="status-button">
+                  <button class="finished">Finished</button>
+                  <button class="delete">Delete</button>
+                </div>
+              </div> -->
             </div>
           </div>
-          <div id="finished" class="book-container">
+          <div class="book-container">
             <h2 class="book-shelf-title">Finished</h2>
-            <div class="book">
-              <div class="inner">
-                <h3>Harry Potter</h3>
-                <p>Penulis: J.K. Rowlinng</p>
-                <p>Tahun : 2000</p>
-              </div>
-              <div class="status-button">
-                <button class="finished">Finished</button>
-                <button class="delete">Delete</button>
-              </div>
-            </div>
+            <div class="book-list" id="finished"></div>
           </div>
         </div>
       </div>
     </main>
+    <script src="js/scipt.js"></script>
   </body>
 </html>
