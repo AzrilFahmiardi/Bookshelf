@@ -129,6 +129,10 @@ main #add-book #submit-button {
   font-weight: 600;
 }
 
+main #add-book #submit-button:hover {
+  background-color: rgba(49, 54, 63, 0.9);
+}
+
 main .child-content .search {
   display: flex;
   flex-direction: row;
@@ -137,7 +141,7 @@ main .child-content .search {
 }
 
 main .search input[type="submit"] {
-  background-color: #76abae;
+  background-color: #337357;
   color: #ffffff;
   height: 2rem;
   width: 100px;
@@ -148,6 +152,10 @@ main .search input[type="submit"] {
   cursor: pointer;
 
   margin-right: 50px;
+}
+
+main .search input[type="submit"]:hover {
+  background-color: #76abae;
 }
 
 main .search input[type="text"] {
@@ -190,7 +198,12 @@ main .child-content .book {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: 0.2s;
 }
+main .child-content .book:hover {
+  transform: translate(10px);
+}
+
 main .child-content .book .status-button {
   display: flex;
   align-items: flex-end;
@@ -258,7 +271,7 @@ main .child-content .book p {
   }
 
   main .search input[type="submit"] {
-    width: 50%px;
+    width: 50%;
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 700;
