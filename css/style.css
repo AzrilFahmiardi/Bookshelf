@@ -247,6 +247,51 @@ main .child-content .book p {
   color: rgba(49, 54, 63, 0.6);
 }
 
+.delete-dialog {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-content {
+  width: fit-content;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 4px solid #222831;
+  box-shadow: 10px 10px 20px #31363f;
+
+  padding: 20px 40px;
+  margin: 20% auto;
+  font-size: 1.2rem;
+  font-family: "Quicksand";
+  font-weight: 400;
+}
+.dialog-content p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.dialog-content button {
+  width: 60px;
+  padding: 7px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #31363f;
+  color: #eeeeee;
+  cursor: pointer;
+}
+
+.dialog-content #ya:hover {
+  background-color: #ee4266;
+}
+.dialog-content #tidak:hover {
+  background-color: #337357;
+}
+
 @media only screen and (max-width: 1120px) {
   main .content {
     display: flex;

@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
     deleteButton.classList.add("delete");
     deleteButton.textContent = "Delete";
     deleteButton.addEventListener("click", function () {
-      deleteBook(bookObject.id);
+      makeDeleteDialog(bookObject.id);
     });
     const statusButton = document.createElement("div");
     statusButton.classList.add("status-button");
@@ -190,6 +190,37 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  function makeDeleteDialog(bookObjectid) {
+    const bookTarget = find(bookObjectid);
+    const text = document.createElement("p");
+    text.innerHTML = "Apakah anda yakin ingin menghapus " + "<strong>" + bookTarget.title + "</strong>";
+    const ya = document.createElement("button");
+    ya.id = "ya";
+    ya.textContent = "Ya";
+    ya.addEventListener("click", function () {
+      deleteBook(bookObjectid);
+      document.querySelector(".delete-dialog").remove();
+    });
+
+    const tidak = document.createElement("button");
+    tidak.id = "tidak";
+    tidak.textContent = "Tidak";
+    tidak.addEventListener("click", function () {
+      document.querySelector(".delete-dialog").remove();
+    });
+
+    const diaologContent = document.createElement("div");
+    diaologContent.classList.add("dialog-content");
+    diaologContent.append(text, ya, tidak);
+
+    const deleteDialog = document.createElement("div");
+    deleteDialog.classList.add("delete-dialog");
+    deleteDialog.append(diaologContent);
+    deleteDialog.style.display = "block";
+
+    document.body.appendChild(deleteDialog);
+  }
 
   if (isStorageExist) {
     loadData();
