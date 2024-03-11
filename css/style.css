@@ -345,4 +345,13 @@ main .child-content .book p {
     justify-content: space-between;
     gap: 20px;
   }
+
+  .delete-dialog {
+    padding: 20px;
+  }
+
+  .dialog-content {
+    margin: 70% auto;
+    padding: 20px;
+  }
 }
